@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">PrecoViagem</string>
+    <string name="dist_ncia">Distância</string>
+    <string name="teste">teste</string>
+    <string name="pre_o">Preço</string>
+    <string name="autonomia">Autonomia</string>
+    <string name="total_em_quil_metros">Total em Quilômetros</string>
+    <string name="pre_o_por_litro">Preço por Litro</string>
+    <string name="km_litro">KM/Litro</string>
+    <string name="seu_gasto_no_total_ser">Seu Gasto no Total será:</string>
+    <string name="r_0">R$ 0</string>
+    <string name="calcular">Calcular</string>
 </resources>
