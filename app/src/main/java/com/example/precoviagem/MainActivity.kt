@@ -14,17 +14,26 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         binding.buttonCalculate.setOnClickListener(this)
-
-    }
-
-    fun calculate (){
-        Toast.makeText(this,"fui clicado!",Toast.LENGTH_SHORT).show()
     }
 
     override fun onClick(view: View) {
         if (view.id==R.id.button_calculate){
             calculate()
         }
+    }
+
+
+    private fun calculate(){
+        val distance = binding.editDistance.text.toString().toFloat()
+        val price = binding.editPrice.text.toString().toFloat()
+        val autonomy = binding.editAutonomy.text.toString().toFloat()
+        val totalValue = (distance*price)/autonomy
+
+        val totalValueStr= "R$ ${"%.2f".format(totalValue)}"
+
+        binding.textTotalValue.text=totalValueStr
+
     }
 }
