@@ -10,4 +10,5 @@
     <string name="seu_gasto_no_total_ser">Seu Gasto no Total será:</string>
     <string name="r_0">R$ 0</string>
     <string name="calcular">Calcular</string>
+    <string name="preencha_campos">"Preencha todos os campos."</string>
 </resources>
