@@ -9,13 +9,12 @@ import com.example.precoviagem.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
-    private lateinit var binding: ActivityMainBinding
+    lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.buttonCalculate.setOnClickListener(this)
     }
 
@@ -34,8 +33,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private fun calculate() {
         if (isValid(binding.editDistance) && isValid(binding.editAutonomy)
             && isValid(binding.editPrice) &&
-            binding.editAutonomy.text.toString().toFloat() != 0f)
-            {
+            binding.editAutonomy.text.toString().toFloat() != 0f
+        ) {
             val distance = binding.editDistance.text.toString().toFloat()
             val price = binding.editPrice.text.toString().toFloat()
             val autonomy = binding.editAutonomy.text.toString().toFloat()
@@ -43,7 +42,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val totalValueStr = "R$ ${"%.2f".format(totalValue)}"
 
             binding.textTotalValue.text = totalValueStr
-        } else{
+        } else {
             Toast.makeText(this, R.string.preencha_campos, Toast.LENGTH_SHORT).show()
         }
     }
