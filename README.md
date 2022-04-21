@@ -1,5 +1,6 @@
 # PrecoViagem
-A app made to pricefy the cost of some trips.
+A app made in Kotlin to pricefy the cost of some trips, using viewBinding.
 
-[Pt-br]Um aplicativo feito para precificar o preço de algumas viagens.
+[Pt-br] Um aplicativo feito em Kotlin para precificar o preço de algumas viagens, usando viewBinding.
 
+![imgPRecoViagem](https://user-images.githubusercontent.com/77680596/164543241-b5013ad4-6fbc-453f-9e34-405106e83a60.png)
